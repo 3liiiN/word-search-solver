@@ -56,7 +56,7 @@ A program that solves word search puzzles of arbitrary dimensions. It locates th
 	//   \ \ \            / / /
 	
   ```
-- Found words and their start and end positions are stored alphabetically in a multimap. Positions are calculated from row/column/diagonal number within the vector (since they are in order) and the positions of the beginning/end character of the word within the row/column/diagonal string.
+- Found words and their start and end positions are stored alphabetically in a multimap. Positions are calculated from row, column, or diagonal number within the vector (since they are in order) and the positions of the beginning and end characters of the word within the row, column, or diagonal string.
 
 
 ## Output
