@@ -1,5 +1,5 @@
 # word-search-solver
-A program that solves word search puzzles of arbitrary dimensions. It locates the start and end positions of all length 6 or longer words from a dictionary that appear horizontally, vertically, and diagonally, either forwards or backwards in the puzzle.
+A program that solves word search puzzles of arbitrary dimensions. It locates the start and end positions of all length 6 or longer words from a dictionary that appear horizontally, vertically, and diagonally, either forwards or backwards in the puzzle. Wraparounds are excluded.
 
 - Uses "words.txt" as dictionary
 - Uses "puzzle.txt" as puzzle
@@ -17,7 +17,7 @@ A program that solves word search puzzles of arbitrary dimensions. It locates th
  The row strings are pushed in order into a vector of row strings, the column strings are pushed in order into
  a vector of column strings, and the diagonal strings are pushed in order into their respective vectors of diagonal strings
 - Serial search is performed for each dictionary word length 6 or longer in every
-  string in each vector, forwards and backwards.
+  string in each vector, forwards and backwards. Words can only be found in diagonals if the puzzle has at least 6x6 dimensions.
   
   **Forwards:**
   ```
@@ -56,7 +56,7 @@ A program that solves word search puzzles of arbitrary dimensions. It locates th
 	//   \ \ \            / / /
 	
   ```
-- Found words and their start and end positions are stored alphabetically in a multimap.  
+- Found words and their start and end positions are stored alphabetically in a multimap. Positions are gleaned from row/column/diagonal number within the vector (since they are in order) and the start/end positions of the character in the string.
 
 
 ## Output
