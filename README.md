@@ -1,6 +1,8 @@
 # word-search-solver
 A program that solves word search puzzles of arbitrary dimensions. It locates the start and end positions of all length 6 or longer words from a dictionary that appear horizontally, vertically, and diagonally, either forwards or backwards in the puzzle. Wraparounds are excluded.
 
+![alt text](https://user-images.githubusercontent.com/34634457/34220695-5604a4ea-e56a-11e7-85a8-2d4571061bf5.png)
+
 - Uses "words.txt" as dictionary
 - Uses "puzzle.txt" as puzzle
 - Position matrix (row, column):<br />
