@@ -13,7 +13,7 @@ A program that solves word search puzzles of arbitrary dimensions. It locates th
 
 ## Data Structures: 
 - Dictionary is stored in an unordered_set. 
-- Each puzzle row, column,and diagonal (both directions // and \\\\ ) is turned into a string with no spaces. 
+- Every puzzle row, column, and diagonal (both directions // and \\\\ ) is turned into a string with no spaces. 
  The row strings are pushed in order into a vector of row strings, the column strings are pushed in order into
  a vector of column strings, and the diagonal strings are pushed in order into their respective vectors of diagonal strings
 - Serial search is performed for each dictionary word length 6 or longer in every
